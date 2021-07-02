@@ -8,7 +8,7 @@ function App() {
     "Wow so easy!", {
     type: 'error',
     position: "bottom-left",
-    autoClose: 5000,
+    autoClose: 10000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -17,35 +17,16 @@ function App() {
   }
   );
 
-  const notifySuccess = () => toast(
-    "Wow so easy!", {
-    type: 'success',
-    position: "bottom-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-  }
-  );
   return (
     <div>
       <ChakraProvider>
         <ToastContainer />
         <Center mt={200}>
           <Button
+            type="success"
             colorScheme="teal"
-            colorScheme="red"
+            variant="outline"
             onClick={notify}
-            width="400px">
-            Button
-          </Button>
-          <Button
-            colorScheme="teal"
-            colorScheme="green"
-
-            onClick={notifySuccess}
             width="400px">
             Button
           </Button>

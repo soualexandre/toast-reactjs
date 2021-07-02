@@ -8,7 +8,7 @@ function App() {
     "Wow so easy!", {
     type: 'error',
     position: "bottom-left",
-    autoClose: 5000,
+    autoClose: 10000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
@@ -21,7 +21,7 @@ function App() {
     "Wow so easy!", {
     type: 'success',
     position: "bottom-right",
-    autoClose: 5000,
+    autoClose: 10000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
